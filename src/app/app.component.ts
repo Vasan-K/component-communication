@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import { VendorComponent } from './modules/vendor/vendor.component';
 
 @Component({
   selector: 'app-root',

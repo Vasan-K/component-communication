@@ -2,8 +2,13 @@
     <div class="row">
         <div class="col-md-6">
             <h1>Parent Component</h1>
-            <app-active-vendor></app-active-vendor>
+            <app-active-vendor [vendoractive]='vendorlist' (childEvent)="ivendor=$event"></app-active-vendor>
         </div>
+         <div>
+            <h2>{{ivendor.name}}</h2>
+            <h2>{{ivendor.age}}</h2>
+            <h2>{{ivendor.city}}</h2>
+         </div>
         <div class="col-md-6">
             <h1>Block Vendor</h1>
             <app-block-vendor></app-block-vendor>
